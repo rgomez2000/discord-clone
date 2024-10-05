@@ -1,4 +1,4 @@
-
+import { cn } from '@/lib/utils'
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -19,7 +19,9 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        <body>
+        <body className={cn(
+          "bg-white dark:bg-[#313338]"
+        )}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
