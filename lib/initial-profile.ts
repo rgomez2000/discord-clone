@@ -22,7 +22,7 @@ export const initialProfile = async () => {
 
     const newProfile = await db.profile.create({
         data: {
-            userID: user.id,
+            userId: user.id,
             name: `${user.firstName} ${user.lastName}`,
             imageUrl: user.imageUrl,
             email: user.emailAddresses[0].emailAddress
@@ -30,4 +30,4 @@ export const initialProfile = async () => {
     });
 
     return newProfile;
-}
+};
