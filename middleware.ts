@@ -6,7 +6,9 @@ export default clerkMiddleware((auth, request) => {
   if (!isPublicRoute(request)) {
     auth().protect()
   }
-})
+
+  ['/api/uploadthing']
+});
 
 export const config = {
   matcher: [
