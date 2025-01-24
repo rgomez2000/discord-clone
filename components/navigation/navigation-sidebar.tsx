@@ -9,7 +9,6 @@ import { db } from "@/lib/db"
 import { NavigationAction } from "./navigation-action";
 import { NavigationItem } from "./navigation-item";
 import { UserButton } from "@clerk/nextjs";
-import { ClerkProvider } from "@clerk/nextjs";
 
 
 
