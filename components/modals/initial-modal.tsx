@@ -99,7 +99,6 @@ export const InitialModal = () => {
                                                     endpoint="serverImage"
                                                     value={field.value}
                                                     onChange={field.onChange}
-                                                    config={{ cn: twMerge }}
                                                 />
                                             </FormControl>
                                         </FormItem>
