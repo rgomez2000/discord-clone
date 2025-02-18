@@ -43,7 +43,7 @@ const formSchema = z.object({
     }).refine(
         name => name !== "general",
         {
-            message: "Channel anme canot be 'general'"
+            message: "Channel name canot be 'general'"
         }
     ),
     type: z.nativeEnum(ChannelType)
