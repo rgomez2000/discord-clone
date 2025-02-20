@@ -35,6 +35,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useParams, useRouter } from "next/navigation";
 import { useModal } from "@/hooks/use-modal-store";
+import { useEffect } from "react";
+import { channel } from "diagnostics_channel";
 
 
 const formSchema = z.object({
@@ -51,19 +53,28 @@ const formSchema = z.object({
 
 // checks to make sure the form has proper submissions
 export const CreateChannelModal = () => {
-    const { isOpen, onClose, type } = useModal();
+    const { isOpen, onClose, type, data } = useModal();
     const router = useRouter();
     const params = useParams();
 
     const isModalOpen = isOpen && type === "createChannel";
+    const { channelType } = data;
 
     const form = useForm({
         resolver: zodResolver(formSchema),
         defaultValues: {
             name: "",
-            type: ChannelType.TEXT,
+            type: channelType || ChannelType.TEXT,
         }
     });
+
+    useEffect(() => {
+        if (channelType) {
+            form.setValue("type", channelType);
+        } else {
+            form.setValue("type", ChannelType.TEXT);
+        }
+    }, [channelType, form])
 
     //checks to make sure more submissions can't be made while a submission is already being made
     const isLoading = form.formState.isSubmitting;
