@@ -5,7 +5,8 @@ import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import axios from "axios";
 import qs from "query-string";
-
+import { Input } from "@/components/ui/input"
+import { Plus, Smile } from "lucide-react";
 
 import {
     Form,
@@ -13,8 +14,7 @@ import {
     FormField,
     FormItem,
 } from "@/components/ui/form";
-import { Input } from "@/components/ui/input"
-import { Plus, Smile } from "lucide-react";
+
 
 interface ChatInputProps {
     apiUrl: string;
@@ -80,6 +80,7 @@ export const ChatInput = ({
                                         border-none border-0 focus-visible:ring-0 focus-visible:ring-offset-0
                                         text-zinc-600 dark:text-zinc-200"
                                         placeholder={`Message ${type === "conversation" ? name : "#" + name}`}
+                                        {...field}
                                     />
                                     <div className="absolute top-7 right-8">
                                         <Smile />
