@@ -25,7 +25,7 @@ export const MediaRoom = ({
 
         (async () => {
             try {
-                // @ts-ignore
+                // @ts-expect-error functions properly but still throws an error
                 const resp = await fetch(`/api/livekit?room=${chatId}&username=${user.firstName} ${user.lastName}`);
                 const data = await resp.json();
                 setToken(data.token);

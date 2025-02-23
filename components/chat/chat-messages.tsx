@@ -55,10 +55,8 @@ export const ChatMessages = ({
         fetchNextPage,
         hasNextPage,
         isFetchingNextPage,
-        status,
         isLoading,
         isError,
-        error,
      } = useChatQuery({
         queryKey,
         apiUrl,

@@ -102,7 +102,7 @@ export const ChatItem = ({
         form.reset({
             content: content,
         })
-    }, [content]);
+    }, [form, content]);
 
     // Worry about this later, fixing file type detection 
     const fileType = fileUrl?.split(".").pop();

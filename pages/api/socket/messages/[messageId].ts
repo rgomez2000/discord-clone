@@ -2,7 +2,6 @@ import { currentProfilePages } from "@/lib/current-profile-pages";
 import { db } from "@/lib/db";
 import { NextApiResponseServerIo } from "@/types";
 import { MemberRole } from "@prisma/client";
-import { ServerOff } from "lucide-react";
 import { NextApiRequest } from "next";
 
 
