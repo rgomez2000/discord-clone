@@ -21,6 +21,7 @@ import { useRouter } from "next/navigation";
 
 interface ChatInputProps {
     apiUrl: string;
+    // eslint-disable-next-line
     query: Record<string, any>;
     name: string;
     type: "conversation" | "channel";

@@ -63,6 +63,7 @@ export const ChatItem = ({
     const { onOpen } = useModal();
 
     useEffect(() => {
+        // eslint-disable-next-line
         const handleKeyDown = (event: any) => {
             if (event.key === "Escape" || event.keyCode === 27) {
                 setIsEditing(false);

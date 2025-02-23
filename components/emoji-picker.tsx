@@ -35,6 +35,7 @@ export const EmojiPicker = ({
                 <Picker
                     theme={ resolvedTheme }
                     data={data}
+                    // eslint-disable-next-line
                     onEmojiSelect={(emoji: any) =>  onChange(emoji.native)}
                 />
             </PopoverContent>
