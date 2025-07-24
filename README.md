@@ -47,3 +47,19 @@ Make sure you have the following installed:
 
 ### Installation
 
+# 1. Clone the repository
+git clone https://github.com/your-username/discord-clone.git
+cd discord-clone
+
+# 2. Install dependencies
+npm install
+# or
+yarn install
+
+# 3. Run the development server
+npm run dev
+# or
+yarn dev
+
+# The app should now be running at:
+# http://localhost:3000
