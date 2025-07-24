@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Discord Clone
+
+## Overview
+
+This project is a full-featured real-time communication platform inspired by Discord, built using **TypeScript**, **React**, **Next.js**, **Socket.IO**, **Tailwind**, **Prisma**, and **PostgreSQL**. It enables users to create and manage servers, participate in real-time messaging and audio/video calls, and perform various moderation tasks.
+
+The application supports dynamic server creation, private messaging, file attachments, role-based access control, and responsive design with full support for light/dark themes and mobile devices. 
+
+---
+
+## Features
+
+- **Real-Time Communication**
+  - Real-time text messaging using **Socket.IO**
+  - Support for real-time editing and deletion of messages
+  - Private 1-on-1 messaging with DMs and calls
+
+- **Messaging & Media**
+  - Attach and send media files and documents within channels
+  - Infinite scroll message loading in batches of 10
+  - Channel types: text, audio, and video
+
+- **Server & Channel Management**
+  - Create and customize servers and channels
+  - Generate unique invite links for server access
+  - Role-based access for guests, members, and moderators
+
+- **Moderation Tools**
+  - Role assignment and permission elevation
+  - Kick members, modify roles, and manage server memberships
+
+- **UI/UX Enhancements**
+  - Fully responsive mobile layout
+  - Toggle between light and dark mode
+  - Intuitive and modern user interface
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Yarn](https://yarnpkg.com/) or `npm`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
