@@ -48,7 +48,7 @@ Make sure you have the following installed:
 ### Installation
 
 **1. Clone the repository**
-- git clone https://github.com/your-username/discord-clone.git
+- git clone https://github.com/rgomez2000/discord-clone.git
 - cd discord-clone
 
 **2. Install dependencies**
